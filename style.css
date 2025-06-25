@@ -12,6 +12,8 @@ header {
   background: #004466;
   color: white;
   padding: 1rem 2rem;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -145,6 +147,7 @@ header {
   font-size: 2rem;
   cursor: pointer;
   color: white;
+  margin-left: auto;  /* Pushes it to the right */
 }
 
 /* Desktop menu (default visible) */
