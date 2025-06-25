@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ohm Traders</title>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    .card h3 a {
+      text-decoration: none;
+      color: #004466;
+      transition: color 0.2s ease;
+    }
+
+    .card h3 a:hover {
+      color: #25D366;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -36,21 +47,19 @@
 <section id="products" class="section">
   <h2>Our Products</h2>
   <div class="grid">
-    <a href="spices.html" class="card-link">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1601312379113-45c07f717df3" alt="Spices">
-        <h3>Spices</h3>
-        <p>Authentic Indian spices – handpicked, sun-dried, and exported fresh worldwide.</p>
-      </div>
-    </a>
 
-    <a href="textiles.html" class="card-link">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1589820296156-d654ddc3edb4" alt="Textiles">
-        <h3>Textiles</h3>
-        <p>High-quality fabrics and materials including cotton, jute, silk, and synthetics.</p>
-      </div>
-    </a>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601312379113-45c07f717df3" alt="Spices">
+      <h3><a href="spices.html">Spices</a></h3>
+      <p>Authentic Indian spices – handpicked, sun-dried, and exported fresh worldwide.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1589820296156-d654ddc3edb4" alt="Textiles">
+      <h3><a href="textiles.html">Textiles</a></h3>
+      <p>High-quality fabrics and materials including cotton, jute, silk, and synthetics.</p>
+    </div>
+
   </div>
 </section>
 
