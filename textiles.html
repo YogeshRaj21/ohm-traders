@@ -6,20 +6,39 @@
   <title>Textiles - Ohm Traders</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/white-wall.png');
+      background-color: #f7f7f7;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
     .textile-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     .textile-card {
-      background: white;
+      background: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
       overflow: hidden;
       text-align: center;
       padding: 1rem;
+      transition: transform 0.2s;
+    }
+
+    .textile-card:hover {
+      transform: translateY(-5px);
     }
 
     .textile-card img {
@@ -30,8 +49,8 @@
     }
 
     .textile-card h3 {
-      margin-top: 1rem;
       color: #004466;
+      margin-top: 1rem;
     }
 
     .textile-card p {
@@ -39,7 +58,7 @@
       margin: 0.5rem 0 1rem;
     }
 
-    .textile-card a.button {
+    .button {
       display: inline-block;
       margin-top: auto;
       padding: 8px 16px;
@@ -57,9 +76,46 @@
       color: #004466;
       font-weight: bold;
     }
+
+    header {
+      background: #004466;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #004466;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
+
 <header>
   <div class="logo">Ω Ohm Traders</div>
   <nav class="menu">
@@ -76,7 +132,6 @@
   <h2>Textiles We Export</h2>
   <div class="textile-grid">
 
-    <!-- Cotton -->
     <div class="textile-card">
       <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1cc" alt="Cotton">
       <h3>Cotton</h3>
@@ -84,7 +139,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Cotton%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Synthetic Fibers -->
     <div class="textile-card">
       <img src="https://images.unsplash.com/photo-1630922674987-8f0d15b38386" alt="Synthetic Fibers">
       <h3>Man-made Fibers</h3>
@@ -92,7 +146,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Synthetic%20Fiber%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Silk -->
     <div class="textile-card">
       <img src="https://images.unsplash.com/photo-1622015664605-3b34704ed20a" alt="Silk">
       <h3>Silk</h3>
@@ -100,7 +153,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Silk%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Jute -->
     <div class="textile-card">
       <img src="https://images.unsplash.com/photo-1611845726493-f13b0181c320" alt="Jute">
       <h3>Jute</h3>
@@ -114,5 +166,6 @@
 <footer>
   <p>&copy; 2025 Ohm Traders. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
