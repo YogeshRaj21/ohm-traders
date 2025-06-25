@@ -6,20 +6,39 @@
   <title>Spices - Ohm Traders</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/white-wall.png');
+      background-color: #f7f7f7;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
     .spice-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     .spice-card {
-      background: white;
+      background: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
       overflow: hidden;
       text-align: center;
       padding: 1rem;
+      transition: transform 0.2s;
+    }
+
+    .spice-card:hover {
+      transform: translateY(-5px);
     }
 
     .spice-card img {
@@ -30,8 +49,8 @@
     }
 
     .spice-card h3 {
-      margin-top: 1rem;
       color: #004466;
+      margin-top: 1rem;
     }
 
     .spice-card p {
@@ -39,7 +58,7 @@
       margin: 0.5rem 0 1rem;
     }
 
-    .spice-card a.button {
+    .button {
       display: inline-block;
       margin-top: auto;
       padding: 8px 16px;
@@ -57,9 +76,46 @@
       color: #004466;
       font-weight: bold;
     }
+
+    header {
+      background: #004466;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #004466;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
+
 <header>
   <div class="logo">Ω Ohm Traders</div>
   <nav class="menu">
@@ -76,7 +132,6 @@
   <h2>Spices We Export</h2>
   <div class="spice-grid">
 
-    <!-- Chilli -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1601312379113-45c07f717df3" alt="Chilli">
       <h3>Chilli</h3>
@@ -84,7 +139,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Chilli%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Turmeric -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1615484478034-e1b2e8a4a7f5" alt="Turmeric">
       <h3>Turmeric</h3>
@@ -92,7 +146,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Turmeric%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Cumin -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1613062158021-fd4cfc21d7e3" alt="Cumin">
       <h3>Cumin</h3>
@@ -100,7 +153,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Cumin%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Coriander -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1621619852581-c0f29d30f4ff" alt="Coriander">
       <h3>Coriander</h3>
@@ -108,7 +160,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Coriander%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Cardamom -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1630401347233-d267716c6e6e" alt="Cardamom">
       <h3>Cardamom</h3>
@@ -116,7 +167,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Cardamom%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Black Pepper -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1627742307037-85d3b7e3e1e2" alt="Black Pepper">
       <h3>Black Pepper</h3>
@@ -124,7 +174,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Black%20Pepper%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Ginger -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1585325701965-f64b3c2828b0" alt="Ginger">
       <h3>Ginger</h3>
@@ -132,7 +181,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Ginger%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Fennel -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1590086782792-c7e0a1e69ed4" alt="Fennel">
       <h3>Fennel</h3>
@@ -140,7 +188,6 @@
       <a class="button" href="https://wa.me/918769169455?text=I'm%20interested%20in%20Fennel%20export%20from%20Ohm%20Traders" target="_blank">Enquire Now</a>
     </div>
 
-    <!-- Fenugreek -->
     <div class="spice-card">
       <img src="https://images.unsplash.com/photo-1667124575793-0f81b59b417f" alt="Fenugreek">
       <h3>Fenugreek</h3>
@@ -154,5 +201,6 @@
 <footer>
   <p>&copy; 2025 Ohm Traders. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
