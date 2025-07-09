@@ -114,6 +114,8 @@ footer {
   animation: bounce 1.2s infinite ease-in-out alternate;
   font-size: 1.8rem;
   font-weight: bold;
+  text-align: left;
+  margin-left: auto;
 }
 
 @keyframes bounce {
