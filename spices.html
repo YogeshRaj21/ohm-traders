@@ -226,5 +226,29 @@
   <p>&copy; 2025 Ohm Traders. All rights reserved.</p>
 </footer>
 
+<h2>Send Spice Inquiry</h2>
+<form action="https://formsubmit.co/your-email@example.com" method="POST">
+  <label for="spice">Select Spice:</label><br>
+  <select id="spice" name="Spice Name" required>
+    <option value="">--Select--</option>
+    <option value="Turmeric">Turmeric</option>
+    <option value="Chili">Chili</option>
+    <option value="Cumin">Cumin</option>
+    <option value="Cardamom">Cardamom</option>
+    <option value="Other">Other</option>
+  </select><br><br>
+
+  <label for="quantity">Required Quantity (in kg):</label><br>
+  <input type="number" id="quantity" name="Quantity" required><br><br>
+
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{10}" required><br><br>
+
+  <label for="email">Email (optional):</label><br>
+  <input type="email" id="email" name="Email"><br><br>
+
+  <button type="submit">Submit Inquiry</button>
+</form>
+
 </body>
 </html>
