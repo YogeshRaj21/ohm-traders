@@ -111,6 +111,13 @@ footer {
   z-index: 999;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #004466; /* or your header color */
+}
+
 .logo-container {
   display: flex;
   align-items: center;
