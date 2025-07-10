@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yogeshraj21.github.io/ohm-traders/sitemap.xml
