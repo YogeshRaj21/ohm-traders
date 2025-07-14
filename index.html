@@ -53,9 +53,17 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Exporting Premium Textile & Spices Worldwide</h1>
-  <p>Your trusted partner from India to the globe.</p>
+<section class="hero-carousel">
+  <div class="carousel-wrapper">
+    <img class="carousel-image active" src="assets/turmeric-powder.webp" alt="Turmeric", width="700",length="400">
+    <img class="carousel-image" src="assets/Black Pepper.webp" alt="Pepper", width="700",length="400>
+    <img class="carousel-image" src="assets/Cardamom.webp" alt="Cardamom", width="700",length="400>
+    <img class="carousel-image" src="assets/closeup-cumin-seed.webp" alt="Cumin", width="700",length="400>
+  </div>
+  <div class="carousel-text">
+    <h1>Exporting Premium Textile & Spices Worldwide</h1>
+    <p>Your trusted partner from India to the globe.</p>
+  </div>
 </section>
 
 
@@ -110,6 +118,16 @@
 
 <!-- this code is for rotating hero image-->
 
+<script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.carousel-image');
+
+  setInterval(() => {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }, 3000); // 3 seconds per image
+</script>
 
 
 </body>
